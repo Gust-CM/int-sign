@@ -74,7 +74,7 @@
       const firmaBase64 = pad.toDataURL('image/png');
 
       try{
-        const res = await fetch('https://webhook.site/339f1ec0-11d3-4550-b0b2-ab45a24f3b82gi', {
+        const res = await fetch('https://webhook.site/339f1ec0-11d3-4550-b0b2-ab45a24f3b82', {
           method:'POST', headers:{'Content-Type':'application/json'},
           body: JSON.stringify({
             id, otp, nombre,
