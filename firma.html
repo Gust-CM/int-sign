@@ -99,8 +99,7 @@
         // no-cors + text/plain evita el preflight OPTIONS
         await fetch(ENDPOINT, {
           method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'text/plain' },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             id, otp, nombre, firmaBase64,
             userAgent: navigator.userAgent,
